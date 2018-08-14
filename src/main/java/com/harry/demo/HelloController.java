@@ -10,6 +10,7 @@ public class HelloController {
     @Autowired
         private GirlProperties girlProperties;
 
+
     /*@RequestMapping(value = "/Hello",method = RequestMethod.GET)*///配置url
     @GetMapping(value = {"/hi/{id}","/Hello"})
     private String say(@PathVariable("id") Integer id){//通过PathVariable来获取url中的值
